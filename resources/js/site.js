@@ -92,8 +92,9 @@ var PrimeFlex = {
         xmlHttp.send(null);
     },
 
-    onToggleSource: function(icon) {
-        var sourceEl = icon.nextElementSibling;
+    onToggleSource: function(el) {
+        var sourceEl = el.nextElementSibling;
+        var icon = el.querySelector("i");
         if (this.hasClass(icon, 'pi-eye')) {
             this.removeClass(icon, 'pi-eye');
             this.addClass(icon, 'pi-eye-slash');

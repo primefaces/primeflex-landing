@@ -367,11 +367,17 @@ p {
                 margin-top: 2rem;
                 border-top: 1px solid #d8dbdf;
 
-                .source-icon {
+                .source-text {
                     padding: .5rem;
-                    margin-left: auto;
-                    font-size: 1.5rem;
                     cursor: pointer;
+                    &:hover {
+                        text-decoration: none;
+
+                        span {
+                            text-decoration: underline;
+                        }
+                    }
+
                 }
 
                 .source-code {
@@ -419,12 +425,9 @@ p {
     }
 }
 
-.footer {
-
-}
-
 @media(min-width: 1200px) {
     .hero {
+        height: 506px;
         .hero-text {
             text-align: left;
     
