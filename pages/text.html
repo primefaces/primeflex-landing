@@ -1,0 +1,94 @@
+<div id="text">
+    <h1>Text</h1>
+    <p>Manage the alignment and the styling of a text with <a href="https://github.com/primefaces/primeflex">PrimeFlex</a> text utilities.</p>
+
+    <h5>Getting Started</h5>
+    <p>The text classes use the <i>p-text-&#123;value&#125;</i> syntax.</p>
+
+    <h5>Alignment</h5>
+    <p>Four options are available for alignment.</p>
+    <ul>
+        <li>left</li>
+        <li>center</li>
+        <li>right</li>
+        <li>justify</li>
+    </ul>
+
+    <h5>Wrap</h5>
+    <p>Text wrapping defines how the text would be displayed when it exceeds the size of its container.</p>
+    <ul>
+        <li>nowrap</li>
+        <li>wrap</li>
+        <li>truncate</li>
+    </ul>
+
+    <h5>Transform</h5>
+    <p>Transform property changes the case of the text.</p>
+    <ul>
+        <li>lowercase</li>
+        <li>uppercase</li>
+        <li>capitalize</li>
+    </ul>
+
+    <h5>Style</h5>
+    <p>Text styling applies to font weight and style.</p>
+    <ul>
+        <li>bold</li>
+        <li>normal</li>
+        <li>light</li>
+        <li>italic</li>
+    </ul>
+
+    <div class="card">
+        <h5>Alignment</h5>
+        <div class="p-mb-3 p-text-left">Left</div>
+        <div class="p-mb-3 p-text-center">Center</div>
+        <div class="p-text-right">Right</div>
+
+        <h5>Wrap</h5>
+        <div class="p-mb-3 container" style="width: 10rem">Long text wraps and does not overlow.</div>
+        <div class="p-mb-3 container p-text-nowrap" style="width: 10rem">Long text does not wrap and overflows the parent.</div>
+        <div class="p-mb-3 container p-text-nowrap p-text-truncate" style="width: 10rem">Long text does not wrap and overflows the parent.</div>
+
+        <h5>Transform</h5>
+        <div class="p-mb-3 p-text-lowercase">LOWERCASE</div>
+        <div class="p-mb-3 p-text-uppercase">uppercase</div>
+        <div class="p-text-capitalize">capitalize</div>
+
+        <h5>Style</h5>
+        <div class="p-mb-3 p-text-bold">Bold</div>
+        <div class="p-mb-3 p-text-normal">Normal</div>
+        <div class="p-mb-3 p-text-light">Light</div>
+        <div class="p-mb-3 p-text-italic">Italic</div>
+
+        <div class="source">
+            <i class="source-icon pi pi-eye" onclick="PrimeFlex.onToggleSource(this)" title="Source code"></i>
+            <div class="source-code">
+<pre><code class="language-html">
+&lt;h5&gt;Alignment&lt;/h5&gt;
+&lt;div class="p-mb-3 p-text-left"&gt;Left&lt;/div&gt;
+&lt;div class="p-mb-3 p-text-center"&gt;Center&lt;/div&gt;
+&lt;div class="p-text-right"&gt;Right&lt;/div&gt;
+
+&lt;h5&gt;Wrap&lt;/h5&gt;
+&lt;div class="p-mb-3 container" style="width: 10rem"&gt;Long text wraps and does not overlow.&lt;/div&gt;
+&lt;div class="p-mb-3 container p-text-nowrap" style="width: 10rem"&gt;Long text does not wrap and overflows the parent.&lt;/div&gt;
+&lt;div class="p-mb-3 container p-text-nowrap p-text-truncate" style="width: 10rem"&gt;Long text does not wrap and overflows the parent.&lt;/div&gt;
+
+&lt;h5&gt;Transform&lt;/h5&gt;
+&lt;div class="p-mb-3 p-text-lowercase"&gt;LOWERCASE&lt;/div&gt;
+&lt;div class="p-mb-3 p-text-uppercase"&gt;uppercase&lt;/div&gt;
+&lt;div class="p-text-capitalize"&gt;capitalize&lt;/div&gt;
+
+&lt;h5&gt;Style&lt;/h5&gt;
+&lt;div class="p-mb-3 p-text-bold"&gt;Bold&lt;/div&gt;
+&lt;div class="p-mb-3 p-text-normal"&gt;Normal&lt;/div&gt;
+&lt;div class="p-mb-3 p-text-light"&gt;Light&lt;/div&gt;
+&lt;div class="p-mb-3 p-text-italic"&gt;Italic&lt;/div&gt;
+
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+</div>

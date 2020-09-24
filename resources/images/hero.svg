@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720px" height="461px" viewBox="0 0 720 461" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-utility</title>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PrimeFlex-Setup" transform="translate(-690.000000, -131.000000)">
+            <g id="icon-utility" transform="translate(690.000000, 131.000000)">
+                <rect id="aea5e876-5b18-4677-ac52-565f186c2754" fill="#E6E6E6" fill-rule="nonzero" x="0.307440007" y="0.407400009" width="719.037505" height="460.503962"></rect>
+                <rect id="aeed2be9-3178-4cee-b478-9db2d7f97a20" fill="#FFFFFF" fill-rule="nonzero" x="20.8681205" y="58.1666413" width="677.916161" height="375.501849"></rect>
+                <rect id="b3ae8885-9a9e-4403-9d49-07bff8102aa7" fill="#0078E3" fill-rule="nonzero" x="0" y="0" width="719.037505" height="30.5474407"></rect>
+                <rect id="b27f3643-394f-4790-b443-091b1b383c54" fill="#E6E6E6" fill-rule="nonzero" x="393.786977" y="99.2577539" width="246.760077" height="238.181997"></rect>
+                <circle id="e395ce2b-339a-464a-b2a8-2798fb0dfcd4" fill="#FFFFFF" fill-rule="nonzero" cx="22.7001605" cy="15.6172804" r="5.66160013"></circle>
+                <circle id="ba9fbbde-097d-4714-9aa4-a15d83836bc3" fill="#FFFFFF" fill-rule="nonzero" cx="44.190721" cy="15.6172804" r="5.66160013"></circle>
+                <circle id="ab9aef1c-a9cb-4a01-bb5b-9a91a857f5fb" fill="#FFFFFF" fill-rule="nonzero" cx="65.6812815" cy="15.6172804" r="5.66160013"></circle>
+                <rect id="e493c728-f703-42a2-881c-386585883b73" fill="#0078E3" fill-rule="nonzero" x="72.9993533" y="98.7680506" width="65.8022415" height="65.8022415"></rect>
+                <rect id="fef75a5d-72e7-4f52-be39-ca98924ebad3" fill="#E6E6E6" fill-rule="nonzero" x="164.506444" y="99.1452107" width="65.8022415" height="65.8022415"></rect>
+                <rect id="b42a9be3-8096-4c9f-95c4-e18278a3579e" fill="#0078E3" fill-rule="nonzero" x="164.767692" y="189.533396" width="65.8022415" height="218.952717"></rect>
+                <rect id="e3bd9f8a-f01d-48ae-a6f1-3d5ac6753111" fill="#E6E6E6" fill-rule="nonzero" x="71.2042816" y="189.045364" width="65.8022415" height="112.024083"></rect>
+                <rect id="aa772a43-ca79-434e-998e-525da0608a2b" fill="#E6E6E6" fill-rule="nonzero" x="393.786977" y="375.721937" width="246.760077" height="32.9011207"></rect>
+                <rect id="b869959f-3b5e-4542-9dd3-67ec9d40b083" fill="#E6E6E6" fill-rule="nonzero" x="71.2042816" y="325.791513" width="65.8022415" height="82.2066019"></rect>
+                <rect id="ed8504c8-ba55-4496-b946-b31fe66f24a3" fill="#E6E6E6" fill-rule="nonzero" x="258.331077" y="99.5945939" width="65.8022415" height="201.474013"></rect>
+                <rect id="af23db80-e058-4986-866a-292ebf8abb10" fill="#E6E6E6" fill-rule="nonzero" x="258.069854" y="325.992231" width="65.8022415" height="82.2536419"></rect>
+                <g id="head" transform="translate(431.224255, 120.894897)" fill="#FFFFFF">
+                    <polygon id="chick-right" fill-rule="nonzero" points="126.543807 89.2935088 113.145051 86.3170585 123.566306 101.19931 123.566306 147.33429 159.296322 117.569787 159.296322 66.9701316 142.920065 72.9230322"></polygon>
+                    <polygon id="chick-left" fill-rule="nonzero" transform="translate(33.496890, 107.152211) scale(-1, 1) translate(-33.496890, -107.152211) " points="23.8200108 89.2935088 10.4212547 86.3170585 20.8425094 101.19931 20.8425094 147.33429 56.5725256 117.569787 56.5725256 66.9701316 40.1962682 72.9230322"></polygon>
+                    <polygon id="mask" points="50.4712295 103.992694 62.3468129 86.0979797 69.7690525 90.5716584 99.458011 90.5716584 106.880251 86.0979797 118.755834 103.992694 118.755834 171.097875 109.849147 184.518911 99.458011 194.957494 69.7690525 194.957494 59.377917 184.518911 50.4712295 171.097875"></polygon>
+                    <polygon id="bottom-chick-right" fill-rule="nonzero" points="123.566306 175.610567 142.920065 156.26364 142.920065 136.916714 123.566306 153.28719"></polygon>
+                    <polygon id="bottom-chick-left" fill-rule="nonzero" transform="translate(36.474392, 156.263640) scale(-1, 1) translate(-36.474392, -156.263640) " points="26.7975121 175.610567 46.1512709 156.26364 46.1512709 136.916714 26.7975121 153.28719"></polygon>
+                    <polygon points="53.5950243 28.2762778 65.5050296 0 104.212547 0 116.122553 28.2762778 98.2575445 84.8288334 72.948783 84.8288334"></polygon>
+                    <polygon id="head-left" fill-rule="nonzero" points="72.948783 84.8288334 8.93250404 61.017231 0 23.8116024 55.0837749 28.2762778 74.4375337 84.8288334"></polygon>
+                    <polygon id="head-right" fill-rule="nonzero" transform="translate(133.987561, 54.320218) scale(-1, 1) translate(-133.987561, -54.320218) " points="169.717577 84.8288334 105.701298 61.017231 96.7687938 23.8116024 153.341319 28.2762778 171.206327 84.8288334"></polygon>
+                    <polygon id="ear-right" fill-rule="nonzero" points="119.100054 23.8116024 150.363818 20.8351521 129.521309 0 108.678799 0"></polygon>
+                    <polygon id="ear-left" fill-rule="nonzero" transform="translate(40.196268, 11.905801) scale(-1, 1) translate(-40.196268, -11.905801) " points="29.7750135 23.8116024 61.0387776 20.8351521 40.1962682 0 19.3537588 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

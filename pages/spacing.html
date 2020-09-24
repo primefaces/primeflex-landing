@@ -1,0 +1,181 @@
+<div>
+    <h1>Spacing</h1>
+    <p><a href="https://github.com/primefaces/primeflex">PrimeFlex</a> provides various spacing utilities to modify an element's layout.</p>
+
+    <h5>Getting Started</h5>
+    <p>The spacing classes use the <i>p-&#123;property&#125;&#123;position&#125;-&#123;value&#125;</i> syntax whereas for responsive
+    values <i>p-&#123;property&#125;&#123;position&#125;-&#123;breakpoint&#125;-&#123;value&#125;</i> format is used.</p>
+
+    <h5>Property</h5>
+    <p>Property can either be a margin or a padding.</p>
+    <ul>
+        <li><b>m</b>: margin</li>
+        <li><b>p</b>: padding</li>
+    </ul>
+
+    <h5>Position</h5>
+    <p>Position are available for the individual sides, the x-y axis or blank for the shortand of all sides.</p>
+    <ul>
+        <li><b>t</b>: top</li>
+        <li><b>b</b>: bottom</li>
+        <li><b>l</b>: left</li>
+        <li><b>r</b>: right</li>
+        <li><b>x</b>: left and right</li>
+        <li><b>y</b>: top and bottom</li>
+        <li><b>blank</b>: all sides</li>
+    </ul>
+
+    <h5>Value</h5>
+    <p>Value field varies from 0 to 6 where default value of the <i>$spacer</i> is 1rem. The special <i>auto</i> value is available to margins only and used to center elements.</p>
+    <ul>
+        <li><b>0</b>: $spacer * 0</li>
+        <li><b>1</b>: $spacer * .25</li>
+        <li><b>2</b>: $spacer * .5</li>
+        <li><b>3</b>: $spacer * 1</li>
+        <li><b>4</b>: $spacer * 1.5</li>
+        <li><b>5</b>: $spacer * 2</li>
+        <li><b>6</b>: $spacer * 3</li>
+        <li><b>auto</b>: auto margin</li>
+    </ul>
+
+    <h5>Breakpoint</h5>
+    <p>Breakpoints define how the spacing should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <div class="card">
+        <h5>Margin</h5>
+        <p><strong>Without Spacing</strong></p>
+        <button class="button" type="button" label="Button 1" style="width:20rem">Button</button><button class="button" type="button" label="Button 2" style="width:20rem">Button</button>
+
+        <p><strong>With Spacing</strong></p>
+        <button class="button p-mr-2 p-mb-2" type="button" label="Button 1" style="width:20rem">Button</button><button class="button p-mb-2" type="button" label="Button 2" style="width:20rem">Button</button>
+
+        <h5>Responsive Margin</h5>
+        <p><strong>Without Spacing</strong></p>
+        <div class="p-grid p-formgrid fluid">
+            <div class="p-col-12 p-lg-4 p-p-0">
+                <input class="inputfield" type="text">
+            </div>
+            <div class="p-col-12 p-lg-4 p-p-0">
+                <input class="inputfield" type="text">
+            </div>
+            <div class="p-col-12 p-lg-4 p-p-0">
+                <input class="inputfield" type="text">
+            </div>
+        </div>
+
+        <p><strong>With Spacing</strong></p>
+        <div class="p-grid p-formgrid fluid">
+            <div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0">
+                <input class="inputfield" type="text">
+            </div>
+            <div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0">
+                <input class="inputfield" type="text">
+            </div>
+            <div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0">
+                <input class="inputfield" type="text">
+            </div>
+        </div>
+
+        <p><strong>Center</strong></p>
+        <div class="container p-p-4">
+            <button type="button" label="Button" class="button p-d-block p-mx-auto">Button</button>
+        </div>
+
+        <div class="source">
+            <i class="source-icon pi pi-eye" onclick="PrimeFlex.onToggleSource(this)" title="Source code"></i>
+            <div class="source-code">
+<pre><code class="language-html">
+&lt;h5&gt;Margin&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;Without Spacing&lt;/strong&gt;&lt;/p&gt;
+&lt;button class="button" type="button" label="Button 1" style="width:20rem"&gt;Button&lt;/button&gt;&lt;button class="button" type="button" label="Button 2" style="width:20rem"&gt;Button&lt;/button&gt;
+
+&lt;p&gt;&lt;strong&gt;With Spacing&lt;/strong&gt;&lt;/p&gt;
+&lt;button class="button p-mr-2 p-mb-2" type="button" label="Button 1" style="width:20rem"&gt;Button&lt;/button&gt;&lt;button class="button p-mb-2" type="button" label="Button 2" style="width:20rem"&gt;Button&lt;/button&gt;
+
+&lt;h5&gt;Responsive Margin&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;Without Spacing&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="p-grid p-formgrid fluid"&gt;
+    &lt;div class="p-col-12 p-lg-4 p-p-0"&gt;
+        &lt;input class="inputfield" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="p-col-12 p-lg-4 p-p-0"&gt;
+        &lt;input class="inputfield" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="p-col-12 p-lg-4 p-p-0"&gt;
+        &lt;input class="inputfield" type="text"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;With Spacing&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="p-grid p-formgrid fluid"&gt;
+    &lt;div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0"&gt;
+        &lt;input class="inputfield" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0"&gt;
+        &lt;input class="inputfield" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0"&gt;
+        &lt;input class="inputfield" type="text"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Center&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="container p-p-4"&gt;
+    &lt;button type="button" label="Button" class="button p-d-block p-mx-auto"&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h5>Padding</h5>
+        <p><strong>Without Spacing</strong></p>
+        <div class="container">
+            <button class="button" type="button" label="Button">Button</button>
+        </div>
+
+        <p><strong>With Spacing</strong></p>
+        <div class="container p-p-3">
+            <button class="button" type="button" label="Button">Button</button>
+        </div>
+
+        <p><strong>Responsive Spacing</strong></p>
+        <div class="container p-p-0 p-p-sm-1 p-p-md-2 p-p-lg-3">
+            <button class="button" type="button" label="Button">Button</button>
+        </div>
+
+        <div class="source">
+            <i class="source-icon pi pi-eye" onclick="PrimeFlex.onToggleSource(this)" title="Source code"></i>
+            <div class="source-code">
+<pre><code class="language-html">
+&lt;h5&gt;Padding&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;Without Spacing&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="container"&gt;
+    &lt;button class="button" type="button" label="Button"&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;With Spacing&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="container p-p-3"&gt;
+    &lt;button class="button" type="button" label="Button"&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Responsive Spacing&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="container p-p-0 p-p-sm-1 p-p-md-2 p-p-lg-3"&gt;
+    &lt;button class="button" type="button" label="Button"&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+</div>
