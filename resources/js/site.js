@@ -92,20 +92,38 @@ var PrimeFlex = {
         xmlHttp.send(null);
     },
 
-    onToggleSource: function(el) {
+    onToggleMobileMenu: function(e) {
+        var menubutton = e.currentTarget;
+        var menu = menubutton.nextElementSibling;
+
+        if (this.hasClass(menu, 'active')) {
+            this.removeClass(menu, 'active');
+        }
+        else {
+            this.addClass(menu, 'active');
+        }
+    },
+
+    onToggleSource: function(e, el) {
         var sourceEl = el.nextElementSibling;
-        var icon = el.querySelector("i");
+        var icon = el.querySelector('i');
+        var text = icon.nextElementSibling;
+
         if (this.hasClass(icon, 'pi-eye')) {
             this.removeClass(icon, 'pi-eye');
             this.addClass(icon, 'pi-eye-slash');
             sourceEl.style.display = 'block';
+            text.innerText = 'Hide Source';
             this.refreshCodeHighlight();
         }
         else {
             this.removeClass(icon, 'pi-eye-slash');
             this.addClass(icon, 'pi-eye');
+            text.innerText = 'View Source';
             sourceEl.style.display = 'none';
         }
+
+        e.preventDefault();
     },
 
     copyText: function(e) {

@@ -205,7 +205,9 @@ p {
     height: 64px;
     padding: 0 0.25rem 0 1rem;
 
-    ul {
+    > ul {
+        display: none;
+
         li {
             margin: 0 0.75rem;
 
@@ -219,12 +221,56 @@ p {
             }
         }
     }
+
+    .mobile-menu-wrapper {
+        .mobile-button {
+            display: block;
+            color: $topbarTextColor;
+            font-size: 2rem;
+            padding: .75rem;
+            cursor: pointer;
+            @include transition(color .2s);
+
+            &:hover {
+                color: #0078E3;
+            }
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 64px;
+            left: 0;
+            width: 100%;
+            background-color: $topbarBgColor;
+            user-select: none;
+
+            &.active {
+                display: block;
+            }
+
+            li {
+                display: flex;
+                justify-content: center;
+                padding: 1rem 2rem;
+
+                a {
+                    color: $topbarTextColor;
+                    @include transition(color .2s);
+
+                    &:hover {
+                        color: #0078E3;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .hero {
     background-color: $heroBgColor;
     color: $heroTextColor;
-    height: 506px;
+    height: auto;
 
     > .p-grid {
         height: 100%;
@@ -246,7 +292,7 @@ p {
         .hero-second-text-container {
             font-size: 2.6rem;
             text-align: center;
-            width: calc(100% - 110px - 1rem);
+            width: calc(100% - 168px);
         }
     }
 
@@ -295,7 +341,7 @@ p {
 
 .content {
     .menu {
-        flex-shrink: 0;
+        display: none;
         width: 182px;
         background-color: #fafbfd;
         border-right: 4px solid #d9dbdf;
@@ -368,8 +414,15 @@ p {
                 border-top: 1px solid #d8dbdf;
 
                 .source-text {
+                    display: flex;
+                    align-items: center;
                     padding: .5rem;
                     cursor: pointer;
+
+                    i {
+                        margin-right: .2rem;
+                    }
+
                     &:hover {
                         text-decoration: none;
 
@@ -425,9 +478,20 @@ p {
     }
 }
 
+.footer {
+
+}
+
 @media(min-width: 1200px) {
+    .topbar {
+        .mobile-menu-wrapper {
+            display: none;
+        }
+    }
+
     .hero {
         height: 506px;
+
         .hero-text {
             text-align: left;
     
@@ -435,6 +499,13 @@ p {
                 text-align: left;
                 width: auto;
             }
+        }
+    }
+
+    .content {
+        .menu {
+            display: block;
+            flex-shrink: 0;
         }
     }
 }
