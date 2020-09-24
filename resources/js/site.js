@@ -71,9 +71,10 @@ var PrimeFlex = {
     openPage: function(route) {
         var $this = this;
         var pageName = route.replaceAll('#', '');
-
+        var siteUrl = window.location.origin + (window.location.pathname || '/');
+        
         this.addClass(this.documentation.childElement, 'hidden');
-        this.httpGet(window.location.origin + '/pages/' + pageName + '.html', function(content) {
+        this.httpGet(siteUrl + 'pages/' + pageName + '.html', function(content) {
             $this.documentation.innerHTML = content;
             $this.refreshCodeHighlight();
 
