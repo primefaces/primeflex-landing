@@ -281,6 +281,9 @@ p {
   margin-top: -0.55rem;
   display: none;
 }
+.hero .hero-npm > .copy {
+  font-size: 1rem;
+}
 .hero .hero-links a {
   color: rgba(255, 255, 255, 0.74);
   margin-right: 1rem;
