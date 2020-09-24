@@ -228,6 +228,9 @@ p {
 .topbar .mobile-menu-wrapper .mobile-menu li a:hover {
   color: #0078E3;
 }
+.topbar .mobile-menu-wrapper .mobile-menu li.start {
+  border-top: 1px #25282E solid;
+}
 
 .hero {
   background-color: #181B21;
@@ -270,7 +273,6 @@ p {
   color: rgba(255, 255, 255, 0.74);
   width: 100%;
   outline: 0 none;
-  user-select: none;
 }
 .hero .hero-npm > .copied-text {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
@@ -283,6 +285,9 @@ p {
 }
 .hero .hero-npm > .copy {
   font-size: 1rem;
+}
+.hero .hero-npm > .copy:hover {
+  cursor: pointer;
 }
 .hero .hero-links a {
   color: rgba(255, 255, 255, 0.74);

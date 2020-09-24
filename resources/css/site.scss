@@ -262,6 +262,10 @@ p {
                         color: #0078E3;
                     }
                 }
+
+                &.start {
+                  border-top: 1px #25282E solid;  
+                }
             }
         }
     }
@@ -313,7 +317,6 @@ p {
             color: rgba(255, 255, 255, 0.74);
             width: 100%;
             outline: 0 none;
-            user-select: none;
         }
 
         > .copied-text {
@@ -328,6 +331,10 @@ p {
 
         > .copy {
             font-size: 1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 
